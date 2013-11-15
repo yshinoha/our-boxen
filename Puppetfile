@@ -30,6 +30,8 @@ end
 # config. Required.
 
 github "boxen", "3.3.4"
+github "osx", "2.0.0"
+
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -52,6 +54,13 @@ github "ruby",       "6.7.2"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
+
+github "virtualbox",    "1.0.9"
+github "chrome",    "1.1.2"
+github "firefox",    "1.1.5"
+github "skitch",    "1.0.2"
+github "sublime_text_2",    "1.1.2"
+github "screen",    "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
