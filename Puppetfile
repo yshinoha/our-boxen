@@ -61,6 +61,8 @@ github "firefox",    "1.1.5"
 github "skitch",    "1.0.2"
 github "sublime_text_2",    "1.1.2"
 github "screen",    "1.0.0"
+github "python",    "1.3.0"
+github "vim",    "1.0.5"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
