@@ -7,11 +7,12 @@ class people::yshinoha {
     include skitch
     include sublime_text_2
     include screen
+    include evernote
 
     # install with homebrew
     package {
       [
-	      'tree',
+        'tree',
         'wget',
         'fontforge'
       ]:;
@@ -23,11 +24,11 @@ class people::yshinoha {
           source   => 'http://kobito.qiita.com/download/Kobito_v1.2.0.zip',
           provider => 'compressed_app';
         'Vagrant1.3.5':
-            provider => 'pkgdmg',
-            source   => 'http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/Vagrant-1.3.5.dmg';
+          provider => 'pkgdmg',
+          source   => 'http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/Vagrant-1.3.5.dmg';
         'GoogleJapaneseInput':
-            source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
-            provider => pkgdmg;
+          source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
+          provider => pkgdmg;
     }
 
     # settings for dotfiles
@@ -76,10 +77,10 @@ class people::yshinoha {
 
       #require => File[$vim]
     }
-#    repository { $powerline:
-#      source => "git@github.com:Lokaltog/vim-powerline.git"#,
-#      #require => File[$vim]
-#    }
+    repository { $powerline:
+      source => "git@github.com:Lokaltog/vim-powerline.git"#,
+      #require => File[$vim]
+    }
     exec { $vimPluginInstall:
       creates => "${fontpatcher}",
       require => Repository[$neobundle],

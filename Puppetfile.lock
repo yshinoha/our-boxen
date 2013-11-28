@@ -14,6 +14,11 @@ GITHUBTARBALL
     dnsmasq (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-evernote
+  specs:
+    evernote (2.0.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
     firefox (1.1.5)
@@ -142,6 +147,7 @@ DEPENDENCIES
   boxen (= 3.3.4)
   chrome (= 1.1.2)
   dnsmasq (= 1.0.0)
+  evernote (= 2.0.4)
   firefox (= 1.1.5)
   foreman (= 1.0.0)
   gcc (= 2.0.1)

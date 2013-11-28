@@ -63,6 +63,7 @@ github "sublime_text_2",    "1.1.2"
 github "screen",    "1.0.0"
 github "python",    "1.3.0"
 github "vim",    "1.0.5"
+github "evernote",    "2.0.4"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
