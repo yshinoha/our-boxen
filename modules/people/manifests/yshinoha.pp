@@ -91,6 +91,7 @@ class people::yshinoha {
       require => Repository[$neobundle],
     }
 
+    # cwd 作業ディレクトリ
     exec { $wgetInconsolata:
       cwd => $fontpatcherdir,
       creates => "$inconsolata",
