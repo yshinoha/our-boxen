@@ -113,4 +113,16 @@ class people::yshinoha {
     nodejs::module { 'bower':
         node_version => 'v0.10'
     }
+
+    # screen
+    file { "/Users/${::boxen_user}/.screenrc":
+      target  => "/Users/${::boxen_user}/.dotfiles/.screenrc",
+      require => Repository[$dotfiles]
+    }
+
+    # bash
+    file { "/Users/${::boxen_user}/.bash_profile":
+      target  => "/Users/${::boxen_user}/.dotfiles/.bash_profile",
+      require => Repository[$dotfiles]
+    }
 }
