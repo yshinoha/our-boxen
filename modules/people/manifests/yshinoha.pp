@@ -104,4 +104,13 @@ class people::yshinoha {
 
     # Or, simply,
     #file { "${vim::vimrc}": ensure => exists }
+
+    #node
+    # install any arbitrary nodejs version
+    #nodejs { 'v0.10': }
+
+    # install some npm modules
+    nodejs::module { 'bower':
+        node_version => 'v0.10'
+    }
 }
