@@ -110,7 +110,7 @@ class people::yshinoha {
     #nodejs { 'v0.10': }
 
     # install some npm modules
-    nodejs::module { 'bower':
+    nodejs::module { ['bower','jshint']:
         node_version => 'v0.10'
     }
 
