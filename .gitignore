@@ -10,5 +10,6 @@
 /shared/*
 !/shared/README.md
 /vendor/gems/
+/vendor/cache/
 *tar.gz
 Inconsolata-Powerline.otf
