@@ -32,6 +32,9 @@ class people::yshinoha {
         'AdobeCreativeCloud':
           source => "https://ccmdls.adobe.com/AdobeProducts/KCCC/1/osx10/CreativeCloudInstaller.dmg",
           provider => 'pkgdmg';
+        'Mou':
+          source => "http://mouapp.com/download/Mou.zip",
+          provider => 'compressed_app';
     }
 
     # settings for dotfiles
@@ -125,4 +128,29 @@ class people::yshinoha {
       target  => "/Users/${::boxen_user}/.dotfiles/.bash_profile",
       require => Repository[$dotfiles]
     }
+
+    #package { 
+    #  'sass':
+    #    ensure => '3.2.0.alpha.277',
+    #    provider => 'gem'
+    #}
+    #package { 
+    #  'compass':
+    #    ensure => '0.12.2',
+    #    provider => 'gem'
+    #}
+
+    #pip pkgs
+    package {
+      [
+        'fftw',
+        'gfortran'
+      ]:;
+    }
+    #package {
+    #  "numpy":
+    #    ensure => "latest",
+    #    provider => pip;
+    #}
+
 }
