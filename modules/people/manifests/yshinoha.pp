@@ -20,6 +20,9 @@ class people::yshinoha {
 
     # install mac applications
     package {
+        'SimpleComic':
+          source   => 'http://dancingtortoisedownload.s3.amazonaws.com/SimpleComic_1.7_252.zip',
+          provider => 'compressed_app';
         'Kobito':
           source   => 'http://kobito.qiita.com/download/Kobito_v1.2.0.zip',
           provider => 'compressed_app';
