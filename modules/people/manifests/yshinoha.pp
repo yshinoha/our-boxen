@@ -8,18 +8,24 @@ class people::yshinoha {
     include sublime_text_2
     include screen
     include evernote
+    #include java
 
     # install with homebrew
     package {
       [
         'tree',
         'wget',
-        'fontforge'
+        'fontforge',
+        'scala',
+        'play'
       ]:;
     }
 
     # install mac applications
     package {
+        'Java':
+          provider => 'pkgdmg',
+          source => 'http://support.apple.com/downloads/DL1572/ja_JP/JavaForOSX2013-05.dmg';
         'SimpleComic':
           source   => 'http://dancingtortoisedownload.s3.amazonaws.com/SimpleComic_1.7_252.zip',
           provider => 'compressed_app';
