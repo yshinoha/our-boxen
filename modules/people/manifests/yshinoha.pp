@@ -8,6 +8,7 @@ class people::yshinoha {
     include sublime_text_2
     include screen
     include evernote
+    include mysql
     #include java
 
     # install with homebrew
@@ -162,4 +163,5 @@ class people::yshinoha {
     #    provider => pip;
     #}
 
+    mysql::db { 'mydb': }
 }

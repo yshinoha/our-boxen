@@ -65,6 +65,7 @@ github "python",    "1.3.0"
 github "vim",    "1.0.5"
 github "evernote",    "2.0.4"
 github "java",    "1.2.0"
+github "mysql",       "1.2.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

@@ -59,6 +59,11 @@ GITHUBTARBALL
     java (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.2)
@@ -162,6 +167,7 @@ DEPENDENCIES
   hub (= 1.0.3)
   inifile (= 1.0.0)
   java (= 1.2.0)
+  mysql (= 1.2.0)
   nginx (= 1.4.2)
   nodejs (= 3.5.0)
   openssl (= 1.0.0)
