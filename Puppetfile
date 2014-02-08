@@ -55,7 +55,7 @@ github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
 
-github "virtualbox",    "1.0.9"
+github "virtualbox",    "1.0.10"
 github "chrome",    "1.1.2"
 github "firefox",    "1.1.5"
 github "skitch",    "1.0.2"

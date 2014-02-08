@@ -18,7 +18,8 @@ class people::yshinoha {
         'wget',
         'fontforge',
         'scala',
-        'play'
+        'play',
+        'mcrypt'
       ]:;
     }
 
@@ -136,6 +137,12 @@ class people::yshinoha {
     # bash
     file { "/Users/${::boxen_user}/.bash_profile":
       target  => "/Users/${::boxen_user}/.dotfiles/.bash_profile",
+      require => Repository[$dotfiles]
+    }
+
+    # zshrc
+    file { "/Users/${::boxen_user}/.zshrc":
+      target  => "/Users/${::boxen_user}/.dotfiles/.zshrc",
       require => Repository[$dotfiles]
     }
 
